@@ -1,0 +1,46 @@
+body {
+    background-color: darkslategrey;
+    color: white;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=hidden] {
+  background-color: red;
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin: 4px;
+  cursor: pointer;
+  float: left;
+}
+
+input[type=text] {
+    background: black;
+    padding: 10px 20px;
+    color: white;
+    margin: 4px;
+    width: 15px;
+    float: left;
+}
+
+input[type="submit"]:hover {
+    background-color: darkred;
+    color: white;
+    float: left;
+}
+
+#text {
+  position: absolute;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  left: 20px;
+  top: 5px;
+}
+
+#container {
+  height: 300px;
+  width: 1024px;
+  position: relative;
+}

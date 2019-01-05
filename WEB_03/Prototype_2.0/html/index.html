@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/css/styles.css">
+        <title>Startseite</title>
+        <script>
+            function setID(){
+                var id = document.getElementById("ID").value;
+                console.log(id);
+                document.getElementById("newGameId").value = id;
+            }
+        </script>
+    </head>
+    <body>
+        <div id="container">
+            <img src="/pictures/chess-header.jpg" alt="Page-header">
+            <p id="text">Gruppe A-5 Schach Prototyp</p>
+        </div>
+        <h3>Bitte geben Sie eine Spiel-ID von 1-99 ein:</h3>
+
+        <input maxlength="2" type="text" name="SpieleID" id="ID" onchange="setID()">
+
+        <form action="/newGame" method="GET">
+            <input type="hidden" id="newGameId" name="newGameId">
+            <input type="submit" value="new game">
+        </form>
+    </body>
+</html>
